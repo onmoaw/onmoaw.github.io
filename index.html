@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: '#FDF6E3',
+              navy: '#002B5B',
+              tangerine: '#F5A623',
+              brick: '#E05D3A',
+              sand: '#F3EAC2',
+            },
+            fontFamily: {
+              sans: ['Space Grotesk', 'sans-serif'],
+              display: ['Syne', 'sans-serif'],
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'spin-slow': 'spin 12s linear infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FDF6E3;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #002B5B;
+        border-radius: 5px;
+        border: 2px solid #FDF6E3;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #E05D3A;
+      }
+      
+      .retro-shadow {
+        box-shadow: 4px 4px 0px #F5A623;
+      }
+      .retro-shadow-hover:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 6px 6px 0px #F5A623;
+      }
+      .retro-shadow-brick {
+        box-shadow: 4px 4px 0px #E05D3A;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "react-dom/": "https://esm.sh/react-dom@18.3.1/",
+    "lucide-react": "https://esm.sh/lucide-react@0.330.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/onmoaw.github.io/assets/index-9DvjT5Pm.js"></script>
+</head>
+  <body class="bg-navy text-navy antialiased selection:bg-tangerine selection:text-white overflow-x-hidden">
+    <div id="root"></div>
+</body>
+</html>
